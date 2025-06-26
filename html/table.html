@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TABLE</title>
+  <style>
+    table{
+      border-collapse: collapse;
+      text-align: center;
+      color: white;
+    }
+    td, th{
+      border: 1px solid black;
+     padding: 10px;     
+    } 
+    tr:nth-child(odd){
+      background-color: #a15252;
+    }
+    tr{
+      background-color: #414141;
+    }
+  </style>
+</head>
+<body>
+   <a href="https://stackoverflow.com/questions/24450645/emmet-short-code-for-table-with-div">table shortcut</a>
+   <table style="width: 100%;">
+    <colgroup>
+     <col span="2"  style=" background-color:rgb(227, 42, 42)"/>
+   </colgroup>
+    <tr>
+      <th>Country</th>
+      <th>Country Code</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Nepal</td>
+      <td>NP</td>
+      <td>nepal@gmail.com</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>IN</td>
+      <td>india@gmail.com</td>
+    </tr>
+    <tr>
+      <td>United States of America</td>
+      <td>USA</td>
+      <td>usa@gmail.com</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>Ch</td>
+      <td>chin@gmail.com</td>
+    </tr>
+   </table>
+   <table>
+    <tr>
+      <th colspan="2">Country</th>
+      <td>India</td>
+      <td>Japan</td>
+    </tr>
+    <tr>
+      <th colspan="2">Code</th>
+      <td>IN</td>
+      <td>Jp</td>
+    </tr>
+   </table>
+</body>
+</html>
+<!-- emmet table shortcut -->
