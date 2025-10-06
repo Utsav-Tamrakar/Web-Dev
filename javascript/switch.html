@@ -1,0 +1,36 @@
+<!-- Switch case using grade and remarks -->
+<!-- Different case has same code use A+,B+ etc -->
+<!-- Switch case use strict Comparison (===)  -->
+<script>
+  let grade = "A";
+  switch (grade) {
+    case "A+":
+    case "A":
+      console.log("You did a great job");
+      break;
+    case "B+":
+    case "B":
+      console.log("You did a good job");
+      break;
+    case "C+":
+    case "C":
+      console.log("You did an okay job");
+      break;
+    case "D+":
+    case "D":
+      console.log("You need to improve");
+      break;
+    case "E":
+    case "F":
+      console.log("You failed");
+      break;
+    default:
+      console.log("Invalid grade");
+  }
+</script>
+<!-- What if we don't use break statement? 
+ it gives all output-->
+
+<!-- Default must not be at last,however if you use default now -->
+
+<!-- Different case has same code use A+,B+ etc -->

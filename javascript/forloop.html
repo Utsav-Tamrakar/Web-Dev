@@ -1,0 +1,29 @@
+<!-- If exp 2 or exp 3 is ommited,the loop will never end and crash the browser for general case until we use break or update the value manually -->
+
+<!-- Don't use var at first expression because it will be redeclared in every iteration. -->
+
+<!-- Nested loop will be explained when we will do mini projects -->
+
+<!-- For loop learn by printing number from 1-10
+  -->
+<script>
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+
+  // Repeating hello world 10 times
+
+  for (let i = 1; i <= 10; i++) {
+    console.log("Hello world");
+  }
+  //  First expression can be declared outside as well..
+  let a = 1;
+  for (; a <= 2; a++) {
+    console.log(a);
+  }
+
+  // Expressions can have multiple initiations...
+  for (let i = 1, j = 9; i <= 9, j >= 1; i++, j--) {
+    console.log(`${i} ${j}`);
+  }
+</script>

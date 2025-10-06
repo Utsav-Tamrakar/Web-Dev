@@ -1,0 +1,48 @@
+<!-- If else understand with example of driving age-->
+<!-- Comparison operators: >, <, >=, <=, ==, != -->
+<!--logical operators: && (and), || (or), ! (not) -->
+<script>
+  var age = 34;
+  if (age > 18) {
+    console.log("You can drive");
+  } else {
+    console.log("You cannot drive");
+  }
+  //Comparison operators
+  let x = 5;
+  if (x <= 6) {
+    console.log("x is less than or equal to 6");
+  } else {
+    console.log("x is greater than 6");
+  }
+  //logical operators
+  //Who can vote in nepal? age>18 and country==nepal
+  var age = 19;
+  let country = "Nepal";
+  if (age > 18 && country == "Nepal") {
+    console.log("You can vote");
+  } else {
+    console.log("You cannot vote");
+  }
+  //Who can go to picnic? car==cruiser or bike==enfield
+  let car = "Cruiser";
+  let bike = "Enfield";
+  if ((car1 = "Cruiser" || bike == "Enfield")) {
+    console.log("You can go to picnic");
+  } else {
+    console.log("You cannot go to picnic");
+  }
+  // Show the use of truthy and falsy values if.falsy values=0,"",false,null,undefined,NaN
+  if (age) {
+    console.log("Hello");
+  }
+  // else if use to show good morning,evening and night
+  let time = "morning";
+  if (time == "morning") {
+    console.log("Good morning");
+  } else if (time == "evening") {
+    console.log("Good evening");
+  } else {
+    console.log("Good night");
+  }
+</script>

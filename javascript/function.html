@@ -1,0 +1,51 @@
+<!-- Function to print good morning -->
+<script>
+  function greet() {
+    console.log("Good Morning");
+  }
+  greet();
+  // Global variables are declared outside any function and can be accessed anywhere, including inside functions.
+  // Local variables are declared inside a function and are only accessible within that function.
+  // Local variable
+  function age() {
+    let age = 21;
+    console.log(age);
+  }
+  age();
+  // not available outside function
+  // console.log(age);
+
+  let z = 50;
+  function print() {
+    console.log(z);
+  }
+  print();
+  console.log(z);
+  // If a local variable has the same name as a global variable, the local variable "shadows" the global one inside the function.
+  let b = 25;
+  function ager() {
+    let b = 30;
+    console.log(b);
+  }
+  ager();
+  console.log(b);
+  // tip:Global variables can be accessed from function but in modern javascript it is suggested not to use it more,instead we use local variable as far as possible
+  // Parameter and argument using example of greeting with name
+  function greet(name) {
+    console.log(`Good Morning ${name}`);
+  }
+  greet("Ram");
+  //Use of Default value
+  function greetd(name = "shyam") {
+    console.log(`Good morning ${name}`);
+  }
+  greetd();
+  greetd("Utsav");
+
+  // Return in function using area
+  function find_area(length, breadth) {
+    area = length * breadth;
+    return area;
+  }
+  console.log(find_area(30, 15));
+</script>
