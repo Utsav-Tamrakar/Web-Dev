@@ -1,0 +1,35 @@
+<script>
+  //Normal Function
+
+  /*
+    function find_area(l, b) {
+      let area = l * b;
+      return area;
+    }
+    console.log(find_area(30, 15));
+    */
+
+  // Function expression-Function stored in variable name and its called by
+  // variable()
+  //Function Expression
+
+  /*let find_area = function (l, b) {
+      let area = l * b;
+      return area;
+    };
+    console.log(find_area(30, 15));
+  */
+  // Arrow function concept with same concept If function has only one statement,we don't require curly braces and it automatically returns the value
+  /*let find_area = (l, b) => {
+    let area = l * b;
+    return area;
+  };
+  console.log(find_area(30, 15));
+*/
+  // Arrow function with only one parameter , we can remove round bracket
+  let find_area = (l, b) => l * b;
+  console.log(find_area(30, 15));
+
+  let area_square = (l) => l ** 2;
+  console.log(area_square(4));
+</script>

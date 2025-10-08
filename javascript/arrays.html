@@ -1,0 +1,32 @@
+adding new elements higher index can add undefiled holes in between how to know
+if a variable is array - don't use typeof instead use Array.isArray(array_name)
+
+<script>
+  // Array can store multiple variable and its common practice to use const for it
+  let fruit = "apple";
+  const fruits = ["apple", "banana", "orange", "pear"];
+  // access array elements changing array elements
+  console.log(fruits[0]);
+  console.log(fruits[2]);
+
+  // Changing array elements
+  fruits[1] = "mango";
+  console.log(fruits[1]);
+
+  // Converting array into string use toString()
+  console.log(fruits.toString());
+
+  // length of array - array.length
+  console.log(fruits.length);
+
+  // accessing last array element
+  console.log(fruits[3]);
+  console.log(fruits[fruits.length - 1]);
+
+  // adding new array element using push()
+  fruits.push("banana");
+  console.log(fruits);
+
+  // adding new array element using length
+  fruits[fruits.length] = "papaya";
+</script>
