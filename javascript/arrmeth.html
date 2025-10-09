@@ -1,0 +1,52 @@
+<script>
+  const fruits = ["banana", "apple", "orange", "mango", "pear"];
+  // const veg = ["cauli", "cabbage", "brocauli", "simi"];
+
+  // popping-removes last element
+  /* fruits.pop();
+  console.log(fruits);*/
+
+  // shifting - removes first element
+  /*fruits.shift();
+  console.log(fruits);
+  */
+  // unshift - adds new element at first
+  /*fruits.unshift("apple");
+  console.log(fruits);*/
+
+  //push-adds bew element at last
+  /*fruits.push("pear");
+  console.log(fruits);*/
+
+  // concat-merge two arrays
+  /*const new_fruits = fruits.concat(veg);
+  console.log(new_fruits);*/
+  //Learn how to merge three or more arrays
+
+  // slicing array-(1,4) ,we focus only on one array fruits
+  console.log(fruits.slice(1, 4));
+
+  // sort()-sort array ascending order - not for numbers
+  // console.log(fruits.sort());
+
+  // toSorted()-sort array while not changing original array
+  const sorted_fruits = fruits.toSorted();
+  console.log(sorted_fruits);
+
+  //  reverse()-reverses array and to change it into descending
+  // fruits.sort();
+  // fruits.reverse();
+  // console.log(fruits);
+
+  // toReversed()-same as toSorted
+  const reversed_fruits = fruits.toReversed();
+  console.log(reversed_fruits);
+
+  // sorting number is different -(a,b)=> a - b forascending and opposite for descending
+  const numbers = [2, 10, 5, 8, 9, 26, 6, 35, 98, 42, 58, 75, 45, 25, 36];
+  //for ascending
+  numbers.sort((a, b) => a - b);
+  console.log(numbers);
+  numbers.sort((a, b) => b - a);
+  console.log(numbers);
+</script>

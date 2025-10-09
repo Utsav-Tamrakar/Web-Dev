@@ -1,0 +1,33 @@
+<!-- For each loop -->
+<script>
+  // What is foreach loop along with printing all numbers in array
+  // Actually for each takes 3 parameters - item,index,array - but for now we will deal with only one parameter that is item,later on projects we will see the use of all three parameters
+
+  /*const numbers = [10, 20, 30, 40, 50];
+  numbers.forEach(function (number) {
+    console.log(number);
+  });*/
+
+  // Challenge-1:Greet every friends in the list with Hello -["Sita","Ram","Gita","Shyam","Krishna","Raghav"]
+  const friends = ["Sita", "Ram", "Gita", "Shyam", "Krishna", "Raghav"];
+  friends.forEach(function (friend) {
+    console.log(`Hello - ${friend}`);
+  });
+
+  // Challenge-2:Calculate price after discount amount(10%) on each items [450,300,5000,2500,8500,6800,2300,45000]
+
+  const items = [450, 300, 5000, 2500, 8500, 6800, 2300, 45000];
+  items.forEach(function (item) {
+    console.log(item - 0.1 * item);
+  });
+  // Print only even numbers from list [1,2,3,4,5,6,7,8,9,10,11,12]
+
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  numbers.forEach(function (number) {
+    if (number % 2 == 0) {
+      console.log(number);
+    }
+  });
+
+  // Drawback of for each - it cannot create new array,for that we will see map in our next tutorial
+</script>
