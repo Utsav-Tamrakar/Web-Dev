@@ -1,0 +1,51 @@
+<script>
+  // What is map-double the numbers example
+  const numbers = [1, 2, 3, 4, 5];
+  /*const doubled = numbers.map(function (number) {
+    return number * 2;
+  });
+  console.log(doubled);*/
+
+  // Convert the function to arrow function which is best practice
+  const doubled = numbers.map((number) => number * 2);
+  console.log(doubled);
+  // Map doesn't change the original array4
+  console.log(numbers);
+  // Has 3 parameters-item,index,array but we will see only one or this video ,later on projects we will see others also
+  // Challange -1:put Rs in front of all the prices [520,250,900,150,6000,1000,600,8000,70000,16000]
+  const prices = [520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000];
+  const new_prices = prices.map((price) => `Rs ${price}`);
+  console.log(new_prices);
+  // Challange - 2:Changing strings to uppercase["Javascript","github","laptop","coding","frontend","backend","react","project","developer"]
+  const languages = [
+    "javascript",
+    "github",
+    "laptop",
+    "coding",
+    "frontend",
+    "backend",
+    "react",
+    "project",
+    "developer",
+  ];
+  const cap_words = languages.map((language) => language.toUpperCase());
+  console.log(cap_words);
+  // Challange - 3:Add .com to company name ["google","microsoft","apple","samsung","tiktok","facebook","twitter","amazon","netflix"];
+  const companies = [
+    "google",
+    "microsoft",
+    "apple",
+    "samsung",
+    "tiktok",
+    "facebook",
+    "twitter",
+    "amazon",
+    "netflix",
+  ];
+  const web_company = companies.map((company) => `${company}.com`);
+  console.log(web_company);
+  // Challange - 4:Find the prices after 10% discount [520,250,900,150,6000,1000,600,8000,70000,16000]
+  const costs = [520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000];
+  const new_costs = costs.map((cost) => cost - 0.1 * cost);
+  console.log(new_costs);
+</script>

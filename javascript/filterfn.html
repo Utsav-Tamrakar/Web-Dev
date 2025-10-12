@@ -1,0 +1,51 @@
+<script>
+  // What is filter - along with examination marks example [56,78,94,68,32,15,16,85,47,69,68,78,99,83,74,76,36,25,38,27,16,8,6]
+  // Actually there are three parameter:element,index and array but we see only the first one for now
+  const marks = [
+    56, 78, 94, 68, 32, 15, 16, 85, 47, 69, 68, 78, 99, 83, 74, 76, 36, 25, 38,
+    27, 16, 8, 6,
+  ];
+  const passed = marks.filter((mark) => mark >= 40);
+  console.log(passed);
+  // Challenge-1:Find all the even numbers from the list [1,2,3,4,5,6,7,8,9,10]
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const even = numbers.filter((number) => number % 2 == 0);
+  console.log(even);
+  // Challenge-2:Find the words that contains 'a'-useful in search functionality -['javascript','react','python','c++','ruby','rust','cobol','java','php','laravel','angular']
+  const words = [
+    "javascript",
+    "react",
+    "python",
+    "c++",
+    "ruby",
+    "rust",
+    "cobol",
+    "java",
+    "php",
+    "laravel",
+    "angular",
+  ];
+  const new_words = words.filter((word) => word.includes("a"));
+  console.log(new_words);
+
+  // Challenge-3:remove all the strings while keeping all the numbers [10,"hello",5,"world",0,"javascript","react",85,"php",962,78,"react",56,45,"angular"]
+  const mixed = [
+    10,
+    "hello",
+    5,
+    "world",
+    0,
+    "javascript",
+    "react",
+    85,
+    "php",
+    962,
+    78,
+    "react",
+    56,
+    45,
+    "angular",
+  ];
+  const new_numbers = mixed.filter((value) => typeof value == "number");
+  console.log(new_numbers);
+</script>
