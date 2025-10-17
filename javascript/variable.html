@@ -7,6 +7,9 @@ declaration. they can be redeclared if one is block and another is global. -->
   var age = 21;
   let weight = 80;
   const pi = 3.14;
+  // pi = 10;
+  // console.log(pi); not allowed
+
   // x = 5;
 
   let cash = 5000;
@@ -26,4 +29,21 @@ declaration. they can be redeclared if one is block and another is global. -->
   let y;
   y = 10;
   console.log(y);
+
+  const accountId = 144553;
+  let accountEmail = "utsav@gmail.com";
+  var accountPassword = "utsav@123";
+  accountCity = "Delhi";
+  let accountState;
+  //accountId=23456; not allowed
+
+  accountEmail = "hc@gmail.com";
+  accountPassword = "hc@123";
+  accountCity = "Noida";
+
+  console.log(accountId);
+  console.table({ accountEmail, accountPassword, accountCity, accountState });
+  /*
+  Prefer not to use var in modern JS because of issue in block scope and functional scope.
+  */
 </script>
