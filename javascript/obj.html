@@ -8,6 +8,11 @@
     location: "Kathmandu",
     salary: 25000,
     weight: 75,
+    education: {
+      batch: 2076,
+      slc: 3.8,
+      neb: 3.64,
+    },
   };
   // accessing object properties - two ways dot and square bracket
   console.log(person.salary);
@@ -21,9 +26,17 @@
   console.log(person);
 
   // deleting a property use delete person.age
-  delete person.country;
-  console.log(country);
+  // delete person.country;
+  // console.log(country);
   // nested object - obj inside obj - give education - which is not used more
-
+  console.log(person.education.slc);
   // object inside list - very common and used everywhere
+  const students = [
+    { name: "Ram", age: 21, salary: 25000, weight: 75 },
+    { name: "Shyam", age: 22, salary: 30000, weight: 80 },
+    { name: "Hari", age: 20, salary: 20000, weight: 70 },
+  ];
+  students.forEach((stud) => {
+    console.log(stud.name, stud.salary);
+  });
 </script>
