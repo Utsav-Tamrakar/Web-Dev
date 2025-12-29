@@ -1,0 +1,37 @@
+/* CSS-Cascading Style Sheet
+It is a language that is used to describe the style of the document */
+/*Priorities on the types of css is inline, internal, external */
+/* Universal selector - *{} , Element selector -h1{} ,ID selector-#myId{} , Class selector - .myClass{} */
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+button {
+  background-color: rgb(110, 110, 110);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: rgb(255, 156, 222) solid 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body {
+  background-color: rgb(82, 70, 185);
+  /* background-color: #ff0000; */ /*R-ff,G-ff,B-ff*/
+}
+button:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+#myId {
+  color: rgb(255, 0, 0);
+}
+.myClass {
+  font-size: 20px;
+  color: rgb(0, 255, 0);
+  text-align: center;
+}
