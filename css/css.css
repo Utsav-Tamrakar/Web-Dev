@@ -2,10 +2,25 @@
 It is a language that is used to describe the style of the document */
 /*Priorities on the types of css is inline, internal, external */
 /* Universal selector - *{} , Element selector -h1{} ,ID selector-#myId{} , Class selector - .myClass{} */
+/* class and id difference is that class can be used multiple times while id is unique */
 h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
+  text-decoration: rgb(255, 255, 255) underline;
 }
+h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: underline;
+  /* text decoration:underline,overline,linethrough */
+
+  h4 {
+    color: rgb(255, 255, 0);
+    text-align: center;
+    text-decoration: overline;
+  }
+}
+
 p {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -29,9 +44,27 @@ button:hover {
 
 #myId {
   color: rgb(255, 0, 0);
+  text-align: center;
+  text-decoration:aquamarine underline;
 }
 .myClass {
   font-size: 20px;
   color: rgb(0, 255, 0);
   text-align: center;
 }
+.linkopen {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.linkopen:hover {
+  background-color: rgb(105, 99, 99);
+  color: black;
+}  
