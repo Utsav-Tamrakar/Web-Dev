@@ -1,0 +1,41 @@
+*{
+    margin-top: 10px;
+}
+div{
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline;
+    text-align: center;
+    border: 2px solid rgb(47, 35, 35);
+    border-radius: 10px;
+}
+h1{
+    background-color: lightblue;
+    width: 200px;
+    border: 2px solid black;  /* border-shorthand:width,style,color */
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#box2{
+    display: none; /*Visibily:hidden;
+    :Works similar to display:none but it reserves space for that element whereas display none don't reserve the space for it*/
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+.new-div{
+    all:unset; /*resets all the properties of that element to default*/
+    background-color: rgba(255, 0, 0, 0.5); /* opacity of the element whose range is 0-1 */
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    display: block;
+    padding: auto;
+    
+}
+
+/* display-inline-block means that the element is displayed inline but its children are treated as block-level elements */
