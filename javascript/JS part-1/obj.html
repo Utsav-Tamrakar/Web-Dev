@@ -39,4 +39,19 @@
   students.forEach((stud) => {
     console.log(stud.name, stud.salary);
   });
+  const student = {
+        name: "Roony Bargjhi",
+        age: 21,
+        cgpa : 3.85,
+        isStudent: true,
+        subjects: ["Math", "Science", "History"],
+        address: {
+            street: "123 Main St",
+            city: "Erbil",
+            country: "Iraq"
+        },
+        greet: function() {
+            console.log("Hello, my name is " + this.name);
+        }
+    };
 </script>
