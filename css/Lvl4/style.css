@@ -1,0 +1,51 @@
+/* #box1{
+    height: 100px;
+    width: 200px;
+    background-color:green;
+    font-size: 10px;
+}
+
+#box2{
+    height: 50px;
+    width: 30%;
+    background-color:blue;
+    margin-left: 10%;
+    font-size: 2em; /* 2 times of parent element's font size * /
+    width:3em; /* 3 times of root element's font size */
+/*width: 2rem; /* 2 times of root element's font size */
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  margin: 10px;
+  border: 2px solid black;
+  display: inline-block;
+}
+#box1 {
+  position: static; /* default position * /
+    top: 20px;/*top,bottom,left,right will not work */
+  background-color: blue;
+}
+#box2 {
+  position: relative; /* relative to its original position */
+  top: 20px; /*moves 20px down from its original position */
+  left: 30px; /*moves 30px right from its original position */
+  background-color: yellow;
+}
+#box3 {
+  position: absolute; /* relative to the nearest positioned ancestor */
+  top: 500px;
+  left: 200px;
+  background-color: pink;
+}
+#box4 {
+  position: fixed; /* relative to the browser */
+    top: 0px;
+  background-color: orange;
+}
+#box5 {
+  position: sticky; /* switches between relative and fixed */
+  top: 0px;
+  left: 100px;
+  background-color: lightgreen;
+}
